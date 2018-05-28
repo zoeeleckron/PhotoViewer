@@ -1,0 +1,25 @@
+<!-- fancy way to view photos. List of photo elements, click a "view gallery" button. This brings up the first picture and hides the rest. clicking next brings the next image up, clicking previous brings the previous image up. -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Photo Viewer</title>
+	</head>
+	<body>
+		<center>
+			<button id = "viewPhotos" align = "middle" onclick = "galleryMode()">Gallery Mode</button>
+			<button id = "previous" align = "left" onclick = "showPhoto(-1)"><h2><</h2></button>
+
+			<img id = "photo1" onmouseover = "enlarge(this)" onmouseout="shrink(this)" onclick= "singleMode(this)" 
+				src="WebPictures/pine needle water drop.jpg" alt = "pine needle water drop - Zoee's photography">
+			<img id = "photo2" onmouseover = "enlarge(this)" onmouseout="shrink(this)" onclick= "singleMode(this)"
+				src="WebPictures/Leaves_edit.jpg" alt = "Leaves - Zoee's photography">
+			<img id = "photo3" onmouseover = "enlarge(this)" onmouseout="shrink(this)" onclick= "singleMode(this)" 
+				src="WebPictures/GoodOldTree_edit.jpg" alt = "Good Old Tree - Zoee's photography">
+			<img id = "photo4" onmouseover = "enlarge(this)" onmouseout="shrink(this)" onclick= "singleMode(this)" 
+				src="WebPictures/high exposure tree needles.jpg" alt = "pine needle water drop - Zoee's photography">
+			<button id = "next" align = "right" onclick = "showPhoto(1)"><h2>></h2></button>
+		</center>
+		<script type = "text/javascript" src="PhotoViewer.js"></script>
+	</body>
+</html>
